@@ -1,0 +1,2 @@
+# projectEuler
+Exercícios em python
