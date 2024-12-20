@@ -60,11 +60,11 @@ class BinarySearchTree(BinaryTree):
     def insert(self,value):
         parent =None
         x = self.root
-        
+
         while(x):
             parent = x
-            
-            if value > x.data:
+
+            if value < x.data:
                 x = x.left
             else:
                 x = x.right
@@ -117,9 +117,9 @@ class BinarySearchTree(BinaryTree):
             elif node.right is None:
                 return node.left
             else:
-                substitue =self.min(node.right)
-                node.data = substitue
-                node.right = self.remove(substitue,node.right)
+                substitute =self.min(node.right)
+                node.data = substitute
+                node.right = self.remove(substitute,node.right)
 
 
 
